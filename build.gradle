@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
+    id "org.springframework.boot" version "2.1.7.RELEASE"
+}
+
+repositories {
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+    jcenter()
+}
+
+dependencies {
+    //implementation 'junit:junit:4.12'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'com.alibaba:fastjson:1.2.56'
+	implementation('org.springframework.boot:spring-boot-starter-test')
+    //implementation 'com.google.guava:guava:27.0.1-jre'
+}
+
